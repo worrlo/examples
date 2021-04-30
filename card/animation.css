@@ -13,7 +13,7 @@
     }
 
     .card-content {
-        transform: translateY(75%);
+        transform: translateY(70%);
         transition: transform 400ms ease;
     }
     .card:is(:hover, :focus-within) .card-content {
