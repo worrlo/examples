@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="animation.css">
     <script type="text/javascript">
     (function() {
-        const isIE = /*cc_on!@*/false || !!document.documentMode;
-        const isEdge = !isIE && !window.StyleMedia;
+        var isIE = /*cc_on!@*/false || !!document.documentMode;
+        var isEdge = !isIE && !window.StyleMedia;
         if (isIE && !isEdge) 
             document.write('<link rel="stylesheet" href="ie-mod.css"/>');
     })();

@@ -1,0 +1,6 @@
+.neon-btn::before {
+    transition: opacity 100ms linear;
+}
+.neon-btn::after {
+    transition: opacity 100ms linear;
+}

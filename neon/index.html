@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon effect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <script>
+        (function() {
+            var isIE = /*@cc_on!@*/false || !!document.documentMode;
+            var isEdge = !isIE && !!window.StyleMedia;
+            if (isIE && !isEdge)
+                document.write('<link rel="stylesheet" href="ie-mod.css">');
+        })();
+    </script>
+</head>
+<body>
+    <a href="#" class="neon-btn">Neon</a>
+</body>
+</html>
