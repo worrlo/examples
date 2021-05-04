@@ -3,7 +3,7 @@
     transform-origin: bottom;
 }
 
-.blade::after {
+.blade::after, #on-off:not(:checked) ~ .hilt::after {
     animation: pulse linear 2s infinite;
 }
 
@@ -11,11 +11,14 @@
     50% {opacity: 0.5;}
 }
 
-#on-off:not(:checked) + .blade {
+#on-off:not(:checked) ~ .blade {
     transform: scaleY(0);
 }
 
-#on-off:checked + .blade {
+#on-off:checked ~ .blade {
     transform: scaleY(1);
+}
+#on-off:checked ~ .hilt::after {
+    opacity: 0.6;
 }
 
