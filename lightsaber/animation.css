@@ -1,0 +1,21 @@
+.blade {
+    transition: transform 250ms ease-out;
+    transform-origin: bottom;
+}
+
+.blade::after {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    50% {opacity: 0.5;}
+}
+
+#on-off:not(:checked) + .blade {
+    transform: scaleY(0);
+}
+
+#on-off:checked + .blade {
+    transform: scaleY(1);
+}
+
