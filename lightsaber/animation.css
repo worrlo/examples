@@ -4,7 +4,7 @@
 }
 
 .blade::after {
-    animation: pulse 2s infinite;
+    animation: pulse linear 2s infinite;
 }
 
 @keyframes pulse {
